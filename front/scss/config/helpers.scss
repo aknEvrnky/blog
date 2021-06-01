@@ -1,10 +1,10 @@
 @mixin mq($width: "tablet") {
   @if ($width == "xlarge") {
-    @media (max-width: 1400px) {
+    @media (max-width: 1420px) {
       @content
     }
   } @else if ($width == "min-xlarge") {
-    @media (min-width: 1400px) {
+    @media (min-width: 1420px) {
       @content
     }
   } @else if ($width == "large" ) {
@@ -48,9 +48,15 @@
   }
 }
 
-%flexCenter {
+%allCenter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+%goUp {
+  transition: all ease .3s;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}

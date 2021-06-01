@@ -18,6 +18,11 @@
   margin-left: auto;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -38,9 +43,9 @@
     max-width: 1140px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1420px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1400px;
   }
 }
 .row {

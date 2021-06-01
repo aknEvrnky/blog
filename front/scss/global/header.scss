@@ -1,0 +1,135 @@
+.header {
+  padding: 70px 0 30px 0;
+
+  .row-area [class^="col-"] {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .col-logo {
+    justify-content: center;
+    a {
+      display: inline-block;
+      max-width: 180px;
+    }
+  }
+
+  .col-search {
+    justify-content: flex-end;
+  }
+}
+
+
+.navigation {
+
+  padding: 30px 0;
+  position: sticky;
+  top: -75px;
+  transition: all ease .3s;
+  background-color: #fff;
+  z-index: 100;
+
+  .row-area {
+    justify-content: center;
+  }
+
+  .col-nav {
+    @extend %allCenter;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    li {
+
+      &.active {
+
+        a {
+          background-color: $blue;
+          border-radius: 25px;
+          font-weight: 500;
+          color: #fff;
+          white-space: nowrap;
+
+        }
+
+      }
+
+      &:hover {
+
+        &:not(.active) >a, i {
+          color: $red;
+        }
+      }
+
+      a {
+        color: #222;
+        font-weight: 400;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      &:last-child .dropmenu {
+        left: -100%;
+      }
+
+      &.submenu {
+        position: relative;
+
+        i {
+          margin-left: 6px;
+        }
+      }
+
+      &.submenu:hover > .dropmenu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    }
+  }
+
+  .dropmenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    max-width: 260px;
+    transform: translateY(-5px);
+    box-shadow: 3px 5px 8px rgba(#222, .1);
+    border: 1px solid rgba($red, .15);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .3s;
+    background-color: #fff;
+    padding: 5px 10px;
+  }
+
+  .logo-link img {
+    max-width: 120px;
+  }
+
+  &.sticky {
+
+    top: 0;
+    box-shadow: 0 3px 6px rgba(#222, .15);
+
+    .hide {
+      display: flex;
+      align-items: center;
+    }
+
+    .col-nav {
+      justify-content: flex-end;
+    }
+  }
+
+
+}

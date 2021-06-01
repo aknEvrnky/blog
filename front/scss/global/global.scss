@@ -1,0 +1,436 @@
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-bottom: 3000px;
+}
+
+section {
+  padding: 50px 0;
+
+  @include mq("tablet") {
+    padding: 30px 0;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.title {
+  font: {
+    weight: 600;
+    family: 'Saira', sans-serif;
+  }
+}
+
+a {
+  transition: all ease .3s;
+  color: #222;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  li {
+    @extend %goUp;
+  }
+
+  i {
+    font-size: 24px;
+    color: #24292e;
+
+    &.fa {
+      &-twitter {
+        color: #1DA1F2;
+      }
+      &-facebook-f {
+        color: #175BEB;
+      }
+      &-instagram {
+        color: #EF00A2;
+      }
+      &-linkedin-in {
+        color: #0a66c2;
+      }
+      &-youtube {
+        color: #ff0000;
+      }
+    }
+
+  }
+}
+
+.btn-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @extend %goUp;
+
+  background-color: $blue;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(#222, .3);
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba($blue, .75);
+  }
+
+  padding: 10px;
+  border-radius: 50%;
+
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+
+  @extend %allCenter;
+  @extend %goUp;
+
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: $red;
+
+  box-shadow: 0 3px 6px rgba(#222, .3);
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba($red, .75);
+
+  }
+}
+
+.btn-blue {
+  @extend .btn;
+
+  background-color: $blue;
+  &:hover {
+    box-shadow: 0 3px 6px rgba($blue, .75);
+
+  }
+}
+
+.btn-green {
+  @extend .btn;
+
+  background-color: $green;
+  &:hover {
+    box-shadow: 0 3px 6px rgba($green, .75);
+
+  }
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 100%;
+
+  .blog-img {
+    display: block;
+    box-shadow: 0 3px 12px -1px rgba(#070a1900, .25), 0 22px 27px -20px rgba(#070a1900, .25);
+    position: relative;
+
+    .btn {
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover .btn {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-10px);
+    }
+
+  }
+
+  .stats {
+    background-color: $blue;
+    padding: 10px 15px;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 13px;
+
+    a {
+      color: #fff;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    i {
+      margin-right: 4px;
+    }
+  }
+
+  .blog-content {
+
+    @extend %allCenter;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+
+    .author-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 24px;
+
+      & > * {
+        margin: 0 12px;
+      }
+
+      .author {
+
+        position: relative;
+        &::after {
+          content: '';
+          width: 3px;
+          height: 3px;
+          background-color: $red;
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -12px;
+
+        }
+        a:hover {
+          color: $red;
+        }
+        img {
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 12px;
+      text-align: center;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    .content-wrapper {
+
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 12px;
+
+    }
+
+    .categories {
+
+      a:hover {
+        color: $blue;
+      }
+
+      i {
+        color: $blue;
+      }
+    }
+  }
+
+}
+
+.blog-card-short {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+
+  img {
+    max-width: 80px;
+    margin-right: 24px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: block;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  i {
+    color: $red;
+    margin-right: 6px;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 120px;
+
+  .sidebar-box {
+    border-bottom: 1px solid #ddd;
+    padding: 24px 0;
+  }
+
+  .sidebar-title {
+    @extend .title;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+
+  }
+
+  .categories {
+
+    padding-left: 15px;
+
+    li {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      &[class^='color-']::before {
+        content: '';
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -15px;
+      }
+
+      &.color-1 {
+        &::before {
+        background-color: $blue;
+        }
+        a:hover {
+          color: $blue;
+        }
+      }
+
+      &.color-2 {
+        &::before {
+          background-color: $red;
+        }
+        a:hover {
+          color: $red;
+        }
+      }
+
+      &.color-3 {
+        &::before {
+          background-color: $orange;
+        }
+        a:hover {
+          color: $orange;
+        }
+      }
+
+      &.color-4 {
+        &::before {
+          background-color: $green;
+        }
+        a:hover {
+          color: $green;
+        }
+      }
+
+
+    }
+  }
+
+  .social-box {
+
+    li:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    li {
+      transition: all ease .3s;
+    }
+
+    [class^='social-'] a {
+
+      color: #fff;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+
+      .subtitle {
+        font-size: 13px;
+      }
+
+      .icon-area i {
+        font-size: 24px;
+        color: white;
+      }
+
+    }
+
+    .social-tw {
+      background-color: #63CDF1;
+      &:hover {
+        background-color: #1DA1F2;
+      }
+    }
+
+    .social-ig {
+      background-color: #D62976;
+      &:hover {
+        background-color: #c22369;
+      }
+    }
+
+    .social-yt {
+      background-color: #ff0000;
+      &:hover {
+        background-color: #c20e0e;
+      }
+
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    margin: 0 6px;
+  }
+}
