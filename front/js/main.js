@@ -17,8 +17,19 @@ $(document).ready(function (){
 
         el.closest('.submenu').next('.dropmenu').slideToggle();
 
+    });
 
-    })
+    $('.goSearch').click(function () {
+
+        $('html,body').animate({
+            scrollTop: $('body').position().top += 300
+        }, 300);
+
+        setTimeout(function(){ $('#s').focus(); }, 500);
+
+
+    });
+
 
 
     var headerHeight = $('.header').outerHeight() + 100;

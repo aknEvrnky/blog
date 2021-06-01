@@ -38,18 +38,25 @@
                 <a href="index.php" title=""><img src="front/images/logo.png" alt="" class="img-fluid"></a>
             </div>
             <div class="col-lg-3 col-search">
-                <button class="btn-circle"><i class="fal fa-search"></i></button>
+                <button class="btn-circle goSearch"><i class="fal fa-search"></i></button>
             </div>
         </div>
     </div>
 </header>
+
 <nav class="navigation">
     <div class="container">
         <div class="row row-area">
-            <div class="col-lg-3 hide">
+            <div class="col-lg-2 hide">
                 <a href="index.php" title="" class="logo-link"><img src="front/images/logo2.png" alt="" class="img-fluid"></a>
             </div>
-            <div class="col-lg-9 col-nav">
+            <div class="col-lg-5 hide form-col">
+                <form action="" method="GET">
+                    <input id="s" type="text" name="s" placeholder="Arama Yapın...">
+                    <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-lg-5 col-nav">
                 <ul class="nav-menu">
                     <li class="active">
                         <a href="#" title="">Home</a>
@@ -85,11 +92,16 @@
 
 <header class="mobile-header">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
+        <div class="row row-area">
+            <div class="col-4">
+                <button type="button" class="search" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fal fa-search"></i>
+                </button>
+            </div>
+            <div class="col-4">
                 <a href="" title="" class="logo-link"><img src="front/images/logo2.png" alt="" class="img-fluid"></a>
             </div>
-            <div class="col-6 col-area">
+            <div class="col-4 col-area">
                 <button class="menu-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasExample">
                     <span></span>
                     <span></span>
@@ -159,5 +171,22 @@
                 <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </li>
         </ul>
+    </div>
+</div>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title" id="searchModal">Ara...</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="modal-body form-col">
+                <form action="" method="GET">
+                    <input id="s" type="text" name="s" placeholder="Arama Yapın...">
+                    <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
