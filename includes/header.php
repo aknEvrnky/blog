@@ -50,13 +50,13 @@
             <div class="col-lg-2 hide">
                 <a href="index.php" title="" class="logo-link"><img src="front/images/logo2.png" alt="" class="img-fluid"></a>
             </div>
-            <div class="col-lg-5 hide form-col">
+            <div class="col-lg-4 hide form-col hide-on-large">
                 <form action="" method="GET">
                     <input id="s" type="text" name="s" placeholder="Arama Yapın...">
                     <button type="submit"><i class="fal fa-search"></i></button>
                 </form>
             </div>
-            <div class="col-lg-5 col-nav">
+            <div class="col-lg-6 col-nav">
                 <ul class="nav-menu">
                     <li class="active">
                         <a href="#" title="">Home</a>
@@ -83,6 +83,11 @@
                     </li>
                     <li>
                         <a href="#" title="">İletişim</a>
+                    </li>
+                    <li class="hide show-on-large">
+                        <button type="button" class="btn-circle" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fal fa-search"></i>
+                        </button>
                     </li>
                 </ul>
             </div>

@@ -400,6 +400,8 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="sidebar">
                         <div class="sidebar-box">
                             <div class="sidebar-title">Sosyal Medya</div>
                             <ul class="social-box">

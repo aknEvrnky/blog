@@ -52,6 +52,10 @@
     align-items: center;
     justify-content: flex-start;
 
+    .btn-circle {
+      height: 40px;
+      width: 40px;
+    }
 
     li {
 
@@ -80,6 +84,7 @@
         font-weight: 400;
         padding: 10px 15px;
         display: inline-block;
+        white-space: nowrap;
       }
       &:not(:last-child) {
         margin-right: 10px;
@@ -130,6 +135,10 @@
     top: 0;
     box-shadow: 0 3px 6px rgba(#222, .15);
 
+    .row-area {
+      justify-content: space-between;
+    }
+
     .hide {
       display: flex;
       align-items: center;
@@ -175,7 +184,6 @@
     align-items: center;
     justify-content: flex-end;
   }
-
 
 
   .logo-link img {
@@ -393,6 +401,8 @@
 
     display: block;
     margin-bottom: 30px;
+
+
 
     a {
       color: #222;
