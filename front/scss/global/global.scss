@@ -3,7 +3,6 @@ body {
   @import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  padding-bottom: 3000px;
 }
 
 section {
@@ -290,6 +289,66 @@ a {
   }
 }
 
+.categories {
+
+  padding-left: 15px;
+
+  li {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &[class^='color-']::before {
+      content: '';
+      height: 5px;
+      width: 5px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -15px;
+    }
+
+    &.color-1 {
+      &::before {
+        background-color: $blue;
+      }
+      a:hover {
+        color: $blue;
+      }
+    }
+
+    &.color-2 {
+      &::before {
+        background-color: $red;
+      }
+      a:hover {
+        color: $red;
+      }
+    }
+
+    &.color-3 {
+      &::before {
+        background-color: $orange;
+      }
+      a:hover {
+        color: $orange;
+      }
+    }
+
+    &.color-4 {
+      &::before {
+        background-color: $green;
+      }
+      a:hover {
+        color: $green;
+      }
+    }
+
+  }
+}
+
 .sidebar {
   position: sticky;
   top: 120px;
@@ -305,67 +364,6 @@ a {
     text-align: center;
     margin-bottom: 24px;
 
-  }
-
-  .categories {
-
-    padding-left: 15px;
-
-    li {
-      position: relative;
-
-      &:not(:last-child) {
-        margin-bottom: 12px;
-      }
-
-      &[class^='color-']::before {
-        content: '';
-        height: 5px;
-        width: 5px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -15px;
-      }
-
-      &.color-1 {
-        &::before {
-        background-color: $blue;
-        }
-        a:hover {
-          color: $blue;
-        }
-      }
-
-      &.color-2 {
-        &::before {
-          background-color: $red;
-        }
-        a:hover {
-          color: $red;
-        }
-      }
-
-      &.color-3 {
-        &::before {
-          background-color: $orange;
-        }
-        a:hover {
-          color: $orange;
-        }
-      }
-
-      &.color-4 {
-        &::before {
-          background-color: $green;
-        }
-        a:hover {
-          color: $green;
-        }
-      }
-
-
-    }
   }
 
   .social-box {
@@ -432,5 +430,9 @@ a {
 
   li {
     margin: 0 6px;
+  }
+
+  a:hover {
+    color: #fff;
   }
 }
