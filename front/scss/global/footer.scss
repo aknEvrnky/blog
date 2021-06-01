@@ -20,10 +20,25 @@
       color: $blue;
     }
   }
+
+  @include mq("desktop") {
+      .row-area [class^='col-'] {
+        margin-bottom: 24px;
+      }
+  }
+
+  @include mq("tablet") {
+    padding-bottom: 30px;
+  }
+
+
 }
 
 .bottom-footer {
   text-align: center;
+  @include mq("tablet") {
+      display: none;
+  }
 
   .footer-logo {
 
@@ -33,4 +48,5 @@
       max-width: 120px;
     }
   }
+
 }

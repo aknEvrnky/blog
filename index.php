@@ -334,9 +334,9 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <ul class="pagination">
+                            <ul class="pagination"> <!-- TODO mobilde yazı yerine ok koy -->
                                 <li>
-                                    <a href="" title="" class="btn-blue">Önceki</a>
+                                    <a href="" title="" class="btn-blue"><</a>
                                 </li>
                                 <li>
                                     <a href="" title="" class="btn">1</a>
@@ -351,7 +351,7 @@
                                     <a href="" title="" class="btn">4</a>
                                 </li>
                                 <li>
-                                    <a href="" title="" class="btn-blue">Sonraki</a>
+                                    <a href="" title="" class="btn-blue">></a>
                                 </li>
                             </ul>
                         </div>

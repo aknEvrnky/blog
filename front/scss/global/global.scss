@@ -353,6 +353,10 @@ a {
   position: sticky;
   top: 120px;
 
+  @include mq("desktop") {
+      display: none;
+  }
+
   .sidebar-box {
     border-bottom: 1px solid #ddd;
     padding: 24px 0;
@@ -434,5 +438,9 @@ a {
 
   a:hover {
     color: #fff;
+  }
+
+  a {
+    padding: 10px 15px;
   }
 }

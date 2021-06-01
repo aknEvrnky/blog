@@ -1,6 +1,10 @@
 .header {
   padding: 70px 0 30px 0;
 
+  @include mq("desktop") {
+      display: none;
+  }
+
   .row-area [class^="col-"] {
     display: flex;
     align-items: center;
@@ -20,7 +24,6 @@
   }
 }
 
-
 .navigation {
 
   padding: 30px 0;
@@ -29,6 +32,10 @@
   transition: all ease .3s;
   background-color: #fff;
   z-index: 100;
+
+  @include mq("desktop") {
+    display: none;
+  }
 
   .row-area {
     justify-content: center;
@@ -129,6 +136,226 @@
     .col-nav {
       justify-content: flex-end;
     }
+  }
+
+
+}
+
+.mobile-header {
+
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba($blue, .2);
+
+  .col-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  @include mq("min-desktop") {
+      display: none;
+  }
+
+  .logo-link img {
+    max-width: 120px;
+  }
+
+  .menu-toggler {
+
+    background-color: transparent;
+
+    @include mq("min-tablet") {
+      display: none;
+    }
+
+    padding: 6px;
+    background-color: transparent;
+    width: 27.6px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+
+    span {
+      border-radius: 10px;
+      height: 4px;
+      display: inline-block;
+      transition: all ease .3s;
+      pointer-events: none;
+    }
+
+    & > span:nth-child(1) {
+      background-color: $blue;
+      width: 18px;
+      margin-left: 9.6px;
+      margin-bottom: 4px;
+    }
+    & > span:nth-child(2) {
+      background-color: $orange;
+      width: 27.6px;
+      margin-bottom: 4px;
+      margin-left: 0;
+    }
+    & > span:nth-child(3) {
+      background-color: $blue;
+      width: 18px;
+      margin-left: 0;
+    }
+
+
+
+
+
+  }
+}
+
+
+/* mobile hamburger*/
+
+.mobile-hamburger {
+
+  visibility: visible;
+  width: calc(100% - 35px);
+  background: #fff;
+  padding-top: 30px;
+  color: #222;
+
+  &.show {
+    left: 0;
+
+  }
+
+  .canvas-content {
+
+    padding: 15px;
+    padding-top: 0;
+    overflow-y: auto;
+    overflow-x: visible;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: rgba(0,0,0,0.1);
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background: rgba(0,0,0,0.2);
+    }
+    &::-webkit-scrollbar-thumb:hover{
+      background: rgba(0,0,0,0.4);
+    }
+    &::-webkit-scrollbar-thumb:active{
+      background: rgba(0,0,0,.9);
+    }
+
+  }
+
+  .btn-area {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn-close {
+      height: 35px;
+      width: 35px;
+      transform: translateX(calc(100% + 1px));
+      position: absolute;
+      padding: 5px;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      transition: all ease .3s;
+
+      span {
+        height: 4px;
+        border-radius: 10px;
+        position: absolute;
+
+        &:nth-child(2) {
+
+          background-color: $blue;
+          width: calc(100% - 10px);
+          left: 5px;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &:nth-child(1) {
+
+          background-color: $orange;
+          width: 100%;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+
+    }
+  }
+
+  &.show .btn-close {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .top-area {
+
+    margin-bottom: 30px;
+    .img-link {
+      display: inline-block;
+      max-width: 160px;
+    }
+  }
+
+  .nav-menu {
+
+    display: block;
+    margin-bottom: 30px;
+
+    a {
+      color: #222;
+      font-weight: 300;
+      display: block;
+      padding: 15px 0;
+    }
+
+    .active {
+      font-weight: 600;
+    }
+
+    .submenu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .submenu + .dropmenu {
+      background-color: #fafafa;
+      padding-left: 15px;
+      display: none;
+
+    }
+
+    .submenu-toggler {
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0 10px 30px;
+      cursor: pointer;
+      background-color: transparent;
+    }
+
   }
 
 
