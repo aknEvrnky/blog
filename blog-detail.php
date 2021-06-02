@@ -135,7 +135,7 @@
 
                 <div class="do-comment">
                     <div class="big-title">Yorum Yap</div>
-                    <form action="" method="POST">
+                    <form class="form" action="" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">

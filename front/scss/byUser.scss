@@ -75,39 +75,7 @@
   }
 
   .do-comment {
-
     margin-bottom: 36px;
-
-    .form-group {
-      margin-bottom: 24px;
-
-      p {
-        margin-top: 6px;
-        font: {
-          style: italic;
-          size: 13px;
-        }
-
-        color: #9e9e9e;
-      }
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 16px 14px;
-      border-radius: 20px;
-      border: 1px solid #ddd;
-      outline: none;
-      transition: border-color ease-out .3s;
-
-      &:focus {
-        border-color: $blue;
-      }
-    }
-
-    textarea {
-      min-height: 200px;
-    }
 
   }
 
@@ -172,5 +140,14 @@
     @include col {
       margin-bottom: 48px;
       }
+  }
+}
+
+.contact {
+
+  .stitle {
+    @extend .title;
+    font-size: 24px;
+    margin-bottom: 24px;
   }
 }

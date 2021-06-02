@@ -14256,7 +14256,7 @@ td {
 
 .footer {
   padding: 100px 0; }
-  .footer .title, .footer .sidebar .sidebar-title, .sidebar .footer .sidebar-title, .footer .sidebar-sticky .sidebar-title, .sidebar-sticky .footer .sidebar-title, .footer .blog-detail .title-next, .blog-detail .footer .title-next, .footer .blog-detail .big-title, .blog-detail .footer .big-title, .footer .blog-detail .comment-card .name, .blog-detail .comment-card .footer .name {
+  .footer .title, .footer .sidebar .sidebar-title, .sidebar .footer .sidebar-title, .footer .sidebar-sticky .sidebar-title, .sidebar-sticky .footer .sidebar-title, .footer .blog-detail .title-next, .blog-detail .footer .title-next, .footer .blog-detail .big-title, .blog-detail .footer .big-title, .footer .blog-detail .comment-card .name, .blog-detail .comment-card .footer .name, .footer .contact .stitle, .contact .footer .stitle {
     font-size: 24px;
     margin-bottom: 24px; }
   .footer .footer-menu li {
@@ -14299,9 +14299,31 @@ button {
 input, textarea {
   font-family: 'Montserrat', sans-serif; }
 
-.title, .sidebar .sidebar-title, .sidebar-sticky .sidebar-title, .blog-detail .title-next, .blog-detail .big-title, .blog-detail .comment-card .name {
+.title, .sidebar .sidebar-title, .sidebar-sticky .sidebar-title, .blog-detail .title-next, .blog-detail .big-title, .blog-detail .comment-card .name, .contact .stitle {
   font-weight: 600;
   font-family: 'Saira', sans-serif; }
+
+.form .form-group {
+  margin-bottom: 24px; }
+  .form .form-group p {
+    margin-top: 6px;
+    font-style: italic;
+    font-size: 13px;
+    color: #9e9e9e; }
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 16px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  -webkit-transition: border-color ease-out .3s;
+  transition: border-color ease-out .3s; }
+  .form input:focus, .form textarea:focus {
+    border-color: #98ddca; }
+
+.form textarea {
+  min-height: 200px; }
 
 .blog-detail .category-area, .blog-detail .post-nav {
   padding-bottom: 24px;
@@ -14433,11 +14455,11 @@ a {
             flex-direction: column;
     padding: 30px 26px;
     width: 100%; }
-    .blog-card .blog-content .title, .blog-card-nav .blog-content .title, .blog-card .blog-content .sidebar .sidebar-title, .sidebar .blog-card .blog-content .sidebar-title, .blog-card-nav .blog-content .sidebar .sidebar-title, .sidebar .blog-card-nav .blog-content .sidebar-title, .blog-card .blog-content .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card .blog-content .sidebar-title, .blog-card-nav .blog-content .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card-nav .blog-content .sidebar-title, .blog-card .blog-content .blog-detail .title-next, .blog-detail .blog-card .blog-content .title-next, .blog-card-nav .blog-content .blog-detail .title-next, .blog-detail .blog-card-nav .blog-content .title-next, .blog-card .blog-content .blog-detail .big-title, .blog-detail .blog-card .blog-content .big-title, .blog-card-nav .blog-content .blog-detail .big-title, .blog-detail .blog-card-nav .blog-content .big-title, .blog-card .blog-content .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card .blog-content .name, .blog-card-nav .blog-content .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card-nav .blog-content .name {
+    .blog-card .blog-content .title, .blog-card-nav .blog-content .title, .blog-card .blog-content .sidebar .sidebar-title, .sidebar .blog-card .blog-content .sidebar-title, .blog-card-nav .blog-content .sidebar .sidebar-title, .sidebar .blog-card-nav .blog-content .sidebar-title, .blog-card .blog-content .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card .blog-content .sidebar-title, .blog-card-nav .blog-content .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card-nav .blog-content .sidebar-title, .blog-card .blog-content .blog-detail .title-next, .blog-detail .blog-card .blog-content .title-next, .blog-card-nav .blog-content .blog-detail .title-next, .blog-detail .blog-card-nav .blog-content .title-next, .blog-card .blog-content .blog-detail .big-title, .blog-detail .blog-card .blog-content .big-title, .blog-card-nav .blog-content .blog-detail .big-title, .blog-detail .blog-card-nav .blog-content .big-title, .blog-card .blog-content .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card .blog-content .name, .blog-card-nav .blog-content .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card-nav .blog-content .name, .blog-card .blog-content .contact .stitle, .contact .blog-card .blog-content .stitle, .blog-card-nav .blog-content .contact .stitle, .contact .blog-card-nav .blog-content .stitle {
       font-size: 24px;
       margin-bottom: 12px;
       text-align: center; }
-      .blog-card .blog-content .title:hover, .blog-card-nav .blog-content .title:hover, .blog-card .blog-content .sidebar .sidebar-title:hover, .sidebar .blog-card .blog-content .sidebar-title:hover, .blog-card-nav .blog-content .sidebar .sidebar-title:hover, .sidebar .blog-card-nav .blog-content .sidebar-title:hover, .blog-card .blog-content .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card .blog-content .sidebar-title:hover, .blog-card-nav .blog-content .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card-nav .blog-content .sidebar-title:hover, .blog-card .blog-content .blog-detail .title-next:hover, .blog-detail .blog-card .blog-content .title-next:hover, .blog-card-nav .blog-content .blog-detail .title-next:hover, .blog-detail .blog-card-nav .blog-content .title-next:hover, .blog-card .blog-content .blog-detail .big-title:hover, .blog-detail .blog-card .blog-content .big-title:hover, .blog-card-nav .blog-content .blog-detail .big-title:hover, .blog-detail .blog-card-nav .blog-content .big-title:hover, .blog-card .blog-content .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card .blog-content .name:hover, .blog-card-nav .blog-content .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card-nav .blog-content .name:hover {
+      .blog-card .blog-content .title:hover, .blog-card-nav .blog-content .title:hover, .blog-card .blog-content .sidebar .sidebar-title:hover, .sidebar .blog-card .blog-content .sidebar-title:hover, .blog-card-nav .blog-content .sidebar .sidebar-title:hover, .sidebar .blog-card-nav .blog-content .sidebar-title:hover, .blog-card .blog-content .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card .blog-content .sidebar-title:hover, .blog-card-nav .blog-content .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card-nav .blog-content .sidebar-title:hover, .blog-card .blog-content .blog-detail .title-next:hover, .blog-detail .blog-card .blog-content .title-next:hover, .blog-card-nav .blog-content .blog-detail .title-next:hover, .blog-detail .blog-card-nav .blog-content .title-next:hover, .blog-card .blog-content .blog-detail .big-title:hover, .blog-detail .blog-card .blog-content .big-title:hover, .blog-card-nav .blog-content .blog-detail .big-title:hover, .blog-detail .blog-card-nav .blog-content .big-title:hover, .blog-card .blog-content .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card .blog-content .name:hover, .blog-card-nav .blog-content .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card-nav .blog-content .name:hover, .blog-card .blog-content .contact .stitle:hover, .contact .blog-card .blog-content .stitle:hover, .blog-card-nav .blog-content .contact .stitle:hover, .contact .blog-card-nav .blog-content .stitle:hover {
         color: #ffaaa7; }
     .blog-card .blog-content .content-wrapper, .blog-card-nav .blog-content .content-wrapper {
       line-height: 1.5;
@@ -14559,11 +14581,11 @@ a {
   .blog-card-short img {
     max-width: 80px;
     margin-right: 24px; }
-  .blog-card-short .title, .blog-card-short .sidebar .sidebar-title, .sidebar .blog-card-short .sidebar-title, .blog-card-short .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card-short .sidebar-title, .blog-card-short .blog-detail .title-next, .blog-detail .blog-card-short .title-next, .blog-card-short .blog-detail .big-title, .blog-detail .blog-card-short .big-title, .blog-card-short .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card-short .name {
+  .blog-card-short .title, .blog-card-short .sidebar .sidebar-title, .sidebar .blog-card-short .sidebar-title, .blog-card-short .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-card-short .sidebar-title, .blog-card-short .blog-detail .title-next, .blog-detail .blog-card-short .title-next, .blog-card-short .blog-detail .big-title, .blog-detail .blog-card-short .big-title, .blog-card-short .blog-detail .comment-card .name, .blog-detail .comment-card .blog-card-short .name, .blog-card-short .contact .stitle, .contact .blog-card-short .stitle {
     font-size: 18px;
     margin-bottom: 16px;
     display: block; }
-    .blog-card-short .title:hover, .blog-card-short .sidebar .sidebar-title:hover, .sidebar .blog-card-short .sidebar-title:hover, .blog-card-short .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card-short .sidebar-title:hover, .blog-card-short .blog-detail .title-next:hover, .blog-detail .blog-card-short .title-next:hover, .blog-card-short .blog-detail .big-title:hover, .blog-detail .blog-card-short .big-title:hover, .blog-card-short .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card-short .name:hover {
+    .blog-card-short .title:hover, .blog-card-short .sidebar .sidebar-title:hover, .sidebar .blog-card-short .sidebar-title:hover, .blog-card-short .sidebar-sticky .sidebar-title:hover, .sidebar-sticky .blog-card-short .sidebar-title:hover, .blog-card-short .blog-detail .title-next:hover, .blog-detail .blog-card-short .title-next:hover, .blog-card-short .blog-detail .big-title:hover, .blog-detail .blog-card-short .big-title:hover, .blog-card-short .blog-detail .comment-card .name:hover, .blog-detail .comment-card .blog-card-short .name:hover, .blog-card-short .contact .stitle:hover, .contact .blog-card-short .stitle:hover {
       color: #ffaaa7; }
   .blog-card-short i {
     color: #ffaaa7;
@@ -14633,7 +14655,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .sidebar .social-box [class^='social-'] a .title, .sidebar-sticky .social-box [class^='social-'] a .title, .sidebar .social-box [class^='social-'] a .sidebar-title, .sidebar-sticky .social-box [class^='social-'] a .sidebar-title, .sidebar .social-box [class^='social-'] a .blog-detail .title-next, .blog-detail .sidebar .social-box [class^='social-'] a .title-next, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .title-next, .blog-detail .sidebar-sticky .social-box [class^='social-'] a .title-next, .sidebar .social-box [class^='social-'] a .blog-detail .big-title, .blog-detail .sidebar .social-box [class^='social-'] a .big-title, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .big-title, .blog-detail .sidebar-sticky .social-box [class^='social-'] a .big-title, .sidebar .social-box [class^='social-'] a .blog-detail .comment-card .name, .blog-detail .comment-card .sidebar .social-box [class^='social-'] a .name, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .comment-card .name, .blog-detail .comment-card .sidebar-sticky .social-box [class^='social-'] a .name {
+  .sidebar .social-box [class^='social-'] a .title, .sidebar-sticky .social-box [class^='social-'] a .title, .sidebar .social-box [class^='social-'] a .sidebar-title, .sidebar-sticky .social-box [class^='social-'] a .sidebar-title, .sidebar .social-box [class^='social-'] a .blog-detail .title-next, .blog-detail .sidebar .social-box [class^='social-'] a .title-next, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .title-next, .blog-detail .sidebar-sticky .social-box [class^='social-'] a .title-next, .sidebar .social-box [class^='social-'] a .blog-detail .big-title, .blog-detail .sidebar .social-box [class^='social-'] a .big-title, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .big-title, .blog-detail .sidebar-sticky .social-box [class^='social-'] a .big-title, .sidebar .social-box [class^='social-'] a .blog-detail .comment-card .name, .blog-detail .comment-card .sidebar .social-box [class^='social-'] a .name, .sidebar-sticky .social-box [class^='social-'] a .blog-detail .comment-card .name, .blog-detail .comment-card .sidebar-sticky .social-box [class^='social-'] a .name, .sidebar .social-box [class^='social-'] a .contact .stitle, .contact .sidebar .social-box [class^='social-'] a .stitle, .sidebar-sticky .social-box [class^='social-'] a .contact .stitle, .contact .sidebar-sticky .social-box [class^='social-'] a .stitle {
     margin-bottom: 12px;
     font-size: 18px; }
   .sidebar .social-box [class^='social-'] a .subtitle, .sidebar-sticky .social-box [class^='social-'] a .subtitle {
@@ -14693,10 +14715,10 @@ a {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .breadcrumb .bread .title, .breadcrumb .bread .sidebar .sidebar-title, .sidebar .breadcrumb .bread .sidebar-title, .breadcrumb .bread .sidebar-sticky .sidebar-title, .sidebar-sticky .breadcrumb .bread .sidebar-title, .breadcrumb .bread .blog-detail .title-next, .blog-detail .breadcrumb .bread .title-next, .breadcrumb .bread .blog-detail .big-title, .blog-detail .breadcrumb .bread .big-title, .breadcrumb .bread .blog-detail .comment-card .name, .blog-detail .comment-card .breadcrumb .bread .name {
+  .breadcrumb .bread .title, .breadcrumb .bread .sidebar .sidebar-title, .sidebar .breadcrumb .bread .sidebar-title, .breadcrumb .bread .sidebar-sticky .sidebar-title, .sidebar-sticky .breadcrumb .bread .sidebar-title, .breadcrumb .bread .blog-detail .title-next, .blog-detail .breadcrumb .bread .title-next, .breadcrumb .bread .blog-detail .big-title, .blog-detail .breadcrumb .bread .big-title, .breadcrumb .bread .blog-detail .comment-card .name, .blog-detail .comment-card .breadcrumb .bread .name, .breadcrumb .bread .contact .stitle, .contact .breadcrumb .bread .stitle {
     font-size: 24px; }
     @media (max-width: 768px) {
-      .breadcrumb .bread .title, .breadcrumb .bread .sidebar .sidebar-title, .sidebar .breadcrumb .bread .sidebar-title, .breadcrumb .bread .sidebar-sticky .sidebar-title, .sidebar-sticky .breadcrumb .bread .sidebar-title, .breadcrumb .bread .blog-detail .title-next, .blog-detail .breadcrumb .bread .title-next, .breadcrumb .bread .blog-detail .big-title, .blog-detail .breadcrumb .bread .big-title, .breadcrumb .bread .blog-detail .comment-card .name, .blog-detail .comment-card .breadcrumb .bread .name {
+      .breadcrumb .bread .title, .breadcrumb .bread .sidebar .sidebar-title, .sidebar .breadcrumb .bread .sidebar-title, .breadcrumb .bread .sidebar-sticky .sidebar-title, .sidebar-sticky .breadcrumb .bread .sidebar-title, .breadcrumb .bread .blog-detail .title-next, .blog-detail .breadcrumb .bread .title-next, .breadcrumb .bread .blog-detail .big-title, .blog-detail .breadcrumb .bread .big-title, .breadcrumb .bread .blog-detail .comment-card .name, .blog-detail .comment-card .breadcrumb .bread .name, .breadcrumb .bread .contact .stitle, .contact .breadcrumb .bread .stitle {
         font-size: 18px; } }
   @media (max-width: 768px) {
     .breadcrumb .bread {
@@ -14756,7 +14778,7 @@ a {
     color: #98ddca;
     margin-right: 6px; }
 
-.blog-detail .title, .blog-detail .sidebar .sidebar-title, .sidebar .blog-detail .sidebar-title, .blog-detail .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-detail .sidebar-title, .blog-detail .title-next, .blog-detail .big-title, .blog-detail .comment-card .name {
+.blog-detail .title, .blog-detail .sidebar .sidebar-title, .sidebar .blog-detail .sidebar-title, .blog-detail .sidebar-sticky .sidebar-title, .sidebar-sticky .blog-detail .sidebar-title, .blog-detail .title-next, .blog-detail .big-title, .blog-detail .comment-card .name, .blog-detail .contact .stitle, .contact .blog-detail .stitle {
   font-size: 24px;
   margin-bottom: 24px; }
 
@@ -14784,25 +14806,6 @@ a {
 
 .blog-detail .do-comment {
   margin-bottom: 36px; }
-  .blog-detail .do-comment .form-group {
-    margin-bottom: 24px; }
-    .blog-detail .do-comment .form-group p {
-      margin-top: 6px;
-      font-style: italic;
-      font-size: 13px;
-      color: #9e9e9e; }
-  .blog-detail .do-comment input, .blog-detail .do-comment textarea {
-    width: 100%;
-    padding: 16px 14px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    outline: none;
-    -webkit-transition: border-color ease-out .3s;
-    transition: border-color ease-out .3s; }
-    .blog-detail .do-comment input:focus, .blog-detail .do-comment textarea:focus {
-      border-color: #98ddca; }
-  .blog-detail .do-comment textarea {
-    min-height: 200px; }
 
 .blog-detail .share-area {
   text-align: center;
@@ -14846,3 +14849,7 @@ a {
 
 .category-list .row-area [class^='col-'] {
   margin-bottom: 48px; }
+
+.contact .stitle {
+  font-size: 24px;
+  margin-bottom: 24px; }
