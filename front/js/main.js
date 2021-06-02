@@ -47,4 +47,18 @@ $(document).ready(function (){
     });
 
     $(window).trigger('scroll');
+
+
+    $('.share .copy').on('click', function() {
+        console.log('copied');
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($('#link').val()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+    });
+
+
+
 });

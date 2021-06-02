@@ -30,7 +30,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -63,7 +63,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tag"></i>
                                         <a href="#" title="">PHP</a>
                                     </div>
@@ -95,7 +95,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -128,7 +128,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -161,7 +161,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tag"></i>
                                         <a href="#" title="">PHP</a>
                                     </div>
@@ -193,7 +193,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -226,7 +226,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tag"></i>
                                         <a href="#" title="">PHP</a>
                                     </div>
@@ -258,7 +258,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -291,7 +291,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tags"></i>
                                         <a href="#" title="">Oyun,</a>
                                         <a href="#" title="">PHP</a>
@@ -324,7 +324,7 @@
                                     <div class="content-wrapper">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ipsam iure maxime quos, similique vitae...</p>
                                     </div>
-                                    <div class="categories">
+                                    <div class="category-area">
                                         <i class="fal fa-tag"></i>
                                         <a href="#" title="">PHP</a>
                                     </div>
@@ -336,7 +336,7 @@
                         <div class="col-lg-12">
                             <ul class="pagination"> <!-- TODO mobilde yazı yerine ok koy -->
                                 <li>
-                                    <a href="" title="" class="btn-blue"><</a>
+                                    <a href="" title="" class="btn-blue"><i class="fal fa-angle-left"></i></a>
                                 </li>
                                 <li>
                                     <a href="" title="" class="btn">1</a>
@@ -351,7 +351,7 @@
                                     <a href="" title="" class="btn">4</a>
                                 </li>
                                 <li>
-                                    <a href="" title="" class="btn-blue">></a>
+                                    <a href="" title="" class="btn-blue"><i class="fal fa-angle-right"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -362,7 +362,9 @@
                         <div class="sidebar-box">
                             <div class="sidebar-title">Populer Gönderiler</div>
                             <div class="blog-card-short">
-                                <img src="front/images/blog6.jpg" alt="" class="img-fluid">
+                                <a href="#" title="">
+                                    <img src="front/images/blog6.jpg" alt="" class="img-fluid">
+                                </a>
                                 <div class="content">
                                     <a href="#" title="" class="title">Gulpfile v4 güncelleme nasıl yapılır?</a>
                                     <i class="fal fa-clock"></i> 31.05.2021
@@ -401,7 +403,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="sidebar">
+                    <div class="sidebar-sticky">
                         <div class="sidebar-box">
                             <div class="sidebar-title">Sosyal Medya</div>
                             <ul class="social-box">

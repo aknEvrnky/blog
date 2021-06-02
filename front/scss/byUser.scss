@@ -3,3 +3,166 @@
     margin-bottom: 48px;
   }
 }
+
+.blog-detail {
+
+  .blog-img-large {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 48px;
+  }
+
+  .category-area {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    @extend %bordering;
+
+    a:hover {
+      color: $blue;
+    }
+
+    i {
+      color: $blue;
+      margin-right: 6px;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .title-next {
+    @extend .title;
+    text-align: right;
+  }
+
+  .big-title {
+    @extend .title;
+
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .comment-area {
+    margin-bottom: 60px;
+  }
+
+  .comment-card {
+
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    box-shadow: 3px 5px 8px rgba($blue, .25);
+    padding: 30px;
+    line-height: 1.6;
+    
+    .name {
+
+      @extend .title;
+      font-size: 18px;
+      margin-bottom: 12px;
+
+    }
+  }
+
+  .do-comment {
+
+    margin-bottom: 36px;
+
+    .form-group {
+      margin-bottom: 24px;
+
+      p {
+        margin-top: 6px;
+        font: {
+          style: italic;
+          size: 13px;
+        }
+
+        color: #9e9e9e;
+      }
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 16px 14px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      outline: none;
+      transition: border-color ease-out .3s;
+
+      &:focus {
+        border-color: $blue;
+      }
+    }
+
+    textarea {
+      min-height: 200px;
+    }
+
+  }
+
+  .share-area {
+
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+
+
+    a, button {
+      width: 40px;
+      height: 40px;
+    }
+
+    .share {
+      display: flex;
+      margin-bottom: 24px;
+
+      li {
+        margin: 0 6px;
+      }
+
+      //#link {
+      //  display: none;
+      //}
+    }
+
+  }
+
+  .post-nav {
+
+    margin-bottom: 24px;
+    @extend %bordering;
+    
+    
+    .line {
+      position: relative;
+    }
+    
+    .line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #ddd;
+      right: 50%;
+    }
+    
+  }
+
+
+}

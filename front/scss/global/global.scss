@@ -17,7 +17,7 @@ button {
   cursor: pointer;
 }
 
-input {
+input, textarea {
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -27,6 +27,11 @@ input {
     weight: 600;
     family: 'Saira', sans-serif;
   }
+}
+
+%bordering {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dddddd;
 }
 
 a {
@@ -114,9 +119,14 @@ a {
   box-shadow: 0 3px 6px rgba(#222, .3);
 
   &:hover {
+    color: #fff;
     box-shadow: 0 3px 6px rgba($red, .75);
 
   }
+}
+
+.btn-red {
+  @extend .btn;
 }
 
 .btn-blue {
@@ -135,6 +145,16 @@ a {
   background-color: $green;
   &:hover {
     box-shadow: 0 3px 6px rgba($green, .75);
+
+  }
+}
+
+.btn-orange {
+  @extend .btn;
+
+  background-color: $orange;
+  &:hover {
+    box-shadow: 0 3px 6px rgba($orange, .75);
 
   }
 }
@@ -168,29 +188,6 @@ a {
 
   }
 
-  .stats {
-    background-color: $blue;
-    padding: 10px 15px;
-    border-radius: 30px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #fff;
-    font-size: 13px;
-
-    a {
-      color: #fff;
-    }
-
-    & > *:not(:last-child) {
-      margin-right: 6px;
-    }
-
-    i {
-      margin-right: 4px;
-    }
-  }
-
   .blog-content {
 
     @extend %allCenter;
@@ -198,46 +195,7 @@ a {
     padding: 30px 26px;
     width: 100%;
 
-    .author-area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 24px;
 
-      & > * {
-        margin: 0 12px;
-      }
-
-      .author {
-
-        display: flex;
-        align-items: center;
-
-        position: relative;
-        &::after {
-          content: '';
-          width: 3px;
-          height: 3px;
-          background-color: $red;
-          position: absolute;
-          border-radius: 50%;
-          top: 50%;
-          transform: translateY(-50%);
-          right: -12px;
-
-        }
-        a:hover {
-          color: $red;
-        }
-        img {
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          margin-right: 6px;
-        }
-      }
-    }
 
     .title {
       font-size: 24px;
@@ -257,7 +215,7 @@ a {
 
     }
 
-    .categories {
+    .category-area {
 
       a:hover {
         color: $blue;
@@ -269,6 +227,132 @@ a {
     }
   }
 
+}
+
+.blog-card-nav {
+
+@extend .blog-card;
+
+  .blog-img {
+
+    margin-bottom: 0;
+
+  }
+
+  &.prev {
+    .btn {
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      height: 40px;
+      width: 40px;
+      transform: translate(calc(-50% + 10px), -50%);
+      //transform: translateX(10px);
+
+    }
+    &:hover .btn {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%);
+
+    }
+  }
+
+  &.next {
+    .btn {
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      height: 40px;
+      width: 40px;
+      transform: translate(calc(-50% - 10px), -50%);
+      //transform: translateX(10px);
+
+    }
+    &:hover .btn {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%);
+
+    }
+  }
+
+  .blog-content {
+
+    .date {
+      margin-bottom: 12px;
+      i {
+        color: $red;
+      }
+    }
+  }
+
+}
+
+.stats {
+  background-color: $blue;
+  padding: 10px 15px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 13px;
+
+  a {
+    color: #fff;
+  }
+
+  & > *:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
+
+.author-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
+
+  & > * {
+    margin: 0 12px;
+  }
+
+  .author {
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    &::after {
+      content: '';
+      width: 3px;
+      height: 3px;
+      background-color: $red;
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -12px;
+
+    }
+    a:hover {
+      color: $red;
+    }
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 6px;
+    }
+  }
 }
 
 .blog-card-short {
@@ -360,8 +444,6 @@ a {
 
 .sidebar {
 
-
-
   @include mq("desktop") {
       display: none;
   }
@@ -434,6 +516,12 @@ a {
 
     }
   }
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 120px;
+  @extend .sidebar;
 }
 
 .pagination {

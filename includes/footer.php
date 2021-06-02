@@ -5,14 +5,18 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="title">Popüler Yazılar</div>
                     <div class="blog-card-short">
-                        <img src="front/images/blog6.jpg" alt="" class="img-fluid">
+                        <a href="#" title="">
+                            <img src="front/images/blog6.jpg" alt="" class="img-fluid">
+                        </a>
                         <div class="content">
                             <a href="#" title="" class="title">Gulpfile v4 güncelleme nasıl yapılır?</a>
                             <i class="fal fa-clock"></i> 31.05.2021
                         </div>
                     </div>
                     <div class="blog-card-short">
-                        <img src="front/images/blog7.jpg" alt="" class="img-fluid">
+                        <a href="" title="">
+                            <img src="front/images/blog7.jpg" alt="" class="img-fluid">
+                        </a>
                         <div class="content">
                             <a href="#" title="" class="title">PHP Laravel hakkında bilinmesi gerekenler</a>
                             <i class="fal fa-clock"></i> 31.05.2021
