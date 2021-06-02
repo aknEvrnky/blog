@@ -164,5 +164,13 @@
     
   }
 
+}
 
+.category-list {
+  .row-area {
+
+    @include col {
+      margin-bottom: 48px;
+      }
+  }
 }
